@@ -1,0 +1,55 @@
+/*通配符样式*/
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+	color: #fff;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+body{
+	background: #000;
+}
+/*导航栏样式*/
+.navBar{
+	margin: 20px 20px;
+}
+.navBar > .logo{
+	float: left;
+	font-size: 30px;
+	font-family: "Arial Black";
+	height: 40px;
+	line-height: 40px;
+}
+.navBar > .logo > a > .rs{
+	color: rgb(232,103,107);
+	margin-right: 5px;	
+}
+.navBar > .logo > a > .card{
+	color: rgb(154,157,162);
+}
+.navBar > nav{
+	float: right;
+	height: 40px;
+	line-height: 40px;
+}
+.navBar > nav > ul > li{
+	float: left;
+	list-style:none;
+	margin: 0 17px;	
+}
+.navBar > nav > ul > li > a{
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+}
+.navBar > nav > ul > li > a:hover{
+	border-bottom: 5px solid rgb(232,103,107);
+}
