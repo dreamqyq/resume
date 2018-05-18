@@ -3,7 +3,6 @@
 	margin: 0;
 	padding: 0;
 	border: none;
-	color: #fff;
 }
 a{
 	text-decoration: none;
@@ -15,41 +14,51 @@ a{
 	clear: both;
 }
 body{
-	background: #000;
+	background: rgb(239,239,239);
 }
 /*导航栏样式*/
 .navBar{
 	margin: 20px 20px;
+	position: fixed;
+	width: 100%;
 }
-.navBar > .logo{
+.navBar > .navWrap{
+	padding-right: 20px ;
+}
+.navBar .logo{
 	float: left;
 	font-size: 30px;
 	font-family: "Arial Black";
 	height: 40px;
 	line-height: 40px;
 }
-.navBar > .logo > a > .rs{
+.navBar .logo > a > .rs{
 	color: rgb(232,103,107);
 	margin-right: 5px;	
 }
-.navBar > .logo > a > .card{
+.navBar .logo > a > .card{
 	color: rgb(154,157,162);
 }
-.navBar > nav{
+.navBar nav{
 	float: right;
 	height: 40px;
 	line-height: 40px;
 }
-.navBar > nav > ul > li{
+.navBar nav > ul > li{
 	float: left;
 	list-style:none;
 	margin: 0 17px;	
 }
-.navBar > nav > ul > li > a{
+.navBar nav > ul > li > a{
 	display: block;
 	font-size: 14px;
 	font-weight: bold;
 }
-.navBar > nav > ul > li > a:hover{
+.navBar nav > ul > li > a:hover{
 	border-bottom: 5px solid rgb(232,103,107);
+}
+/*顶部背景图*/
+.wall{
+	height: 645px;
+	border: 1px solid red;
 }
