@@ -18,18 +18,17 @@ body{
 }
 /*导航栏样式*/
 .navBar{
-	margin: 20px 20px;
 	position: fixed;
 	width: 100%;
+	color: #b7b7b7;
 }
 .navBar > .navWrap{
-	padding-right: 20px ;
+	padding:20px 20px;
 }
 .navBar .logo{
 	float: left;
 	font-size: 30px;
 	font-family: "Arial Black";
-	height: 40px;
 	line-height: 40px;
 }
 .navBar .logo > a > .rs{
@@ -41,7 +40,6 @@ body{
 }
 .navBar nav{
 	float: right;
-	height: 40px;
 	line-height: 40px;
 }
 .navBar nav > ul > li{
@@ -59,6 +57,103 @@ body{
 }
 /*顶部背景图*/
 .wall{
-	height: 645px;
-	border: 1px solid red;
+	height: 515px;
+	background: url(../img/wall.jpg) center;
+	background-size: cover;
+
+}
+.mask{
+	background: rgba(0,0,0,0.6);
+	width: 100%;
+	height: 515px;
+}
+
+/*主体部分*/
+main > .card{
+	margin: 0 auto;
+	max-width: 940px;
+	background: #fff;
+}
+main > .card > .cardTop{
+	padding: 52px;
+}
+main > .card > .cardTop > .avatar{
+	float: left;
+	margin-right: 66px;
+}
+main > .card > .cardTop > .avatar > img{
+	height: 347px;
+	width: 299px
+}
+main > .card > .cardTop > .info{
+	float: left;
+	width: 470px;
+}
+main > .card > .cardTop > .info > .welcome{
+	background: rgb(232,103,107);
+	color: #fff;
+	padding: 9px 18px;
+	display: inline-block;
+	margin-bottom: 40px;
+	position: relative;
+}
+main > .card > .cardTop > .info > .welcome > .triangle{
+	position: absolute;
+	top: 100%;
+	left: 5px;
+	display: block;
+	width: 0;
+	border: 10px solid transparent;
+	border-left-color: rgb(232,103,107);
+	border-top-width: 0;  
+}
+main > .card > .cardTop > .info h1{
+	font-weight: normal;
+	color:#3d4451;
+}
+main > .card > .cardTop > .info p{
+	font-size: 18px;
+}
+main > .card > .cardTop > .info hr{
+	height: 0;
+	border: none;
+	border-top: 1px solid rgb(222,222,222);
+	margin: 20px 0;
+}
+main > .card > .cardTop > .info dl dt,
+main > .card > .cardTop > .info dl dd{
+	float: left;
+	width: 30%;
+	line-height: 40px;
+}
+main > .card > .cardTop > .info dl dt{
+	font-weight: bold;
+}
+main > .card > .cardTop > .info dl dd{
+	width: 70%;
+	color: #9da0a7; 
+}
+
+/*卡片页脚区*/
+main > .card > footer{
+	background: rgb(232,103,107);
+	text-align: center;
+
+}
+main > .card > footer a{
+	display: inline-block;
+	margin: 20px 14px;
+	width: 40px;
+	line-height: 20px;
+	padding:10px 0;
+	border-radius: 50%;
+}
+main > .card > footer a:hover{
+	background: rgb(207,93,95);
+}
+main > .card > footer svg{
+	height: 20px;
+	width: 20px;
+	fill: #fff;
+	vertical-align: top;
 }

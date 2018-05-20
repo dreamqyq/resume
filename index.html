@@ -4,6 +4,15 @@
 	<meta charset="UTF-8">
 	<title>Resume</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="//at.alicdn.com/t/font_673488_er16whxqj3ba9k9.js"></script>
+	<style type="text/css">
+    .icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }
+</style>
 </head>
 <body>
 	<div class="navBar">
@@ -28,19 +37,26 @@
 			</nav>
 		</div>
 	</div>
-	<div class="wall"></div>
+	<!-- 遮罩层与背景图 -->
+	<div class="wall">
+		<div class="mask"></div>	
+	</div>
+	<!-- 主体部分 -->
 	<main>
+		<!-- 名片 -->
 		<div class="card">
-			<div class="cardTop">
-				<div class="pic">
-					<img src="" alt="头像">
+			<div class="cardTop clearfix">
+				<div class="avatar">
+					<img src="./img/avatar.jpg" alt="头像">
 				</div>
 				<div class="info">
-					<p>Hello</p>
+					<span class="welcome">Hello
+						<span class="triangle"></span>
+					</span>
 					<h1>I'm <strong>Enoch Qin</strong></h1>
 					<p>Student</p>
 					<hr>
-					<dl>
+					<dl class="clearfix">
 						<dt>AGE</dt>
 						<dd>20</dd>
 						<dt>ADDRESS</dt>
@@ -53,12 +69,36 @@
 				</div>	
 			</div>
 			<footer>
-				<img src="" alt="...">
-				<img src="" alt="...">
-				<img src="" alt="...">
-				<img src="" alt="...">
-				<img src="" alt="...">
-				<img src="" alt="...">
+				<a href="#">
+					<svg class="icon" aria-hidden="true">
+    					<use xlink:href="#icon-QQ"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="icon" aria-hidden="true">
+    					<use xlink:href="#icon-weixin"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="icon" aria-hidden="true">
+    					<use xlink:href="#icon-weibo"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="icon" aria-hidden="true">
+    					<use xlink:href="#icon-twitter"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="icon" aria-hidden="true">
+    					<use xlink:href="#icon-csdn"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="icon" aria-hidden="true">
+    					<use xlink:href="#icon-github"></use>
+					</svg>
+				</a>
 			</footer>
 		</div>	
 		<a href="#" class="btn">DOWNLOAD RESUME</a>
