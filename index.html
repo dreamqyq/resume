@@ -25,7 +25,7 @@
 			<nav>
 				<ul class="clearfix">
 					<li><a href="#">ABOUT</a></li>
-					<li><a href="#">SKLIS</li>
+					<li><a href="#">SKILLS</li>
 					<li><a href="#">PORTFOLIO</a></li>
 					<li><a href="#">EXPERIENCE</a></li>
 					<li><a href="#">PRICING</a></li>
@@ -108,24 +108,83 @@
 			Hello! I’m Enoch Qin , a College student. I am currently studying the Digital Media Technology in the college of computer and information,the China Three Gorges University. Career Objective: Frontend.
 		</div>
 	</main>
-	<section>
+	<section class="skills">
 		<h2>Professional Skills</h2>
-		<ol>
-			<li>HTML</li>
-			<li>CSS</li>
-			<li>JavaScript</li>
-			<li>jQuery</li>
-			<li>Vue</li>
-			<li>HTTP</li>
+		<ol class="clearfix">
+			<li>
+				<h3>HTML</h3>
+				<div class="progressBar">
+					<div class="progressBar-inner" style="width: 90%"></div>
+				</div>
+			</li>
+			<li>
+				<h3>CSS</h3>
+				<div class="progressBar">
+					<div class="progressBar-inner" style="width: 75%"></div>
+				</div>
+			</li>
+			<li>
+				<h3>JavaScript</h3>
+				<div class="progressBar">
+					<div class="progressBar-inner" style="width: 50%"></div>
+				</div>
+			</li>
+			<li>
+				<h3>jQuery</h3>
+				<div class="progressBar">
+					<div class="progressBar-inner" style="width: 60%"></div>
+				</div>
+			</li>
+			<li>
+				<h3>Vue</h3>
+				<div class="progressBar">
+					<div class="progressBar-inner" style="width: 30%"></div>
+				</div>
+			</li>
+			<li>
+				<h3>HTTP</h3>
+				<div class="progressBar">
+					<div class="progressBar-inner" style="width: 40%"></div>
+				</div>
+			</li>
 		</ol>
 	</section>
-	<section>
+	<section class="portfolio">
 		<h2>Portfolio</h2>
-		<ol>
-			<li>ALL</li>
-			<li>FRAME</li>
-			<li>native JavaScript</li>
-		</ol>
+		<nav>
+			<a href="javascript:;" id="works1">ALL</a>
+			<a href="javascript:;" id="works2">FRAME</a>
+			<a href="javascript:;" id="works3">native JavaScript</a>
+			<div class="bottomBar">
+				<div class="bottomBar-inner status-1" id="bottomBarInner"></div>
+			</div>
+		</nav>
+		<script>
+			var btn1 = document.getElementById('works1'),
+				btn2 = document.getElementById('works2'),
+				btn3 = document.getElementById('works3'),
+				bottomBarInner = document.getElementById('bottomBarInner');
+			btn1.onclick=function(){
+				bottomBarInner.className = "bottomBar-inner status-1";
+			}
+			btn2.onclick=function(){
+				bottomBarInner.className = "bottomBar-inner status-2";
+			}
+			btn3.onclick=function(){
+				bottomBarInner.className = "bottomBar-inner status-3";
+			}
+		</script>
+		<div class="works">
+			<div class="works-big">
+				<img src="./img/1.jpg" alt="first-works">
+			</div>
+			<div class="works-small" style="top: 0;left: 647px">
+				<img src="./img/2.jpg" alt="second-works">
+			</div>
+			<div class="works-small" style="top: 312px;left: 647px">
+				<img src="./img/3.jpg" alt="third-works">
+			</div>
+		</div>
 	</section>
 	
 </body>
