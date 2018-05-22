@@ -52,6 +52,7 @@ body{
 	display: block;
 	font-size: 14px;
 	font-weight: bold;
+	transition: border-bottom 0.3s;
 }
 .navBar nav > ul > li > a:hover{
 	border-bottom: 5px solid rgb(232,103,107);
