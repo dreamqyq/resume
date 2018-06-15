@@ -1,293 +1,66 @@
 /*通配符样式*/
-*{
-	margin: 0;
-	padding: 0;
-	border: none;
-	list-style: none;
-}
-a{
-	text-decoration: none;
-	color: inherit;
-}
-.clearfix::after{
-	content: "";
-	display: block;
-	clear: both;
-}
-body{
-	background: rgb(239,239,239);
-}
+*{margin: 0; padding: 0; border: none; list-style: none; }
+a{text-decoration: none; color: inherit; }
+.clearfix::after{content: ""; display: block; clear: both; }
+body{background: rgb(239,239,239); } 
 /*导航栏样式*/
-.navBar{
-	position: fixed;
-	width: 100%;
-	color: #b7b7b7;
-}
-.navBar > .navWrap{
-	padding:20px 20px;
-}
-.navBar .logo{
-	float: left;
-	font-size: 30px;
-	font-family: "Arial Black";
-	line-height: 40px;
-}
-.navBar .logo > a > .rs{
-	color: rgb(232,103,107);
-	margin-right: 5px;	
-}
-.navBar .logo > a > .card{
-	color: rgb(154,157,162);
-}
-.navBar nav{
-	float: right;
-	line-height: 40px;
-}
-.navBar nav > ul > li{
-	float: left;
-	list-style:none;
-	margin: 0 17px;	
-}
-.navBar nav > ul > li > a{
-	display: block;
-	font-size: 14px;
-	font-weight: bold;
-	transition: border-bottom 0.3s;
-}
-.navBar nav > ul > li > a:hover{
-	border-bottom: 5px solid rgb(232,103,107);
-}
+.navBar{position: fixed; width: 100%; color: #b7b7b7; }
+.navBar > .navWrap{padding:20px 20px; } 
+.navBar .logo{float: left; font-size: 30px; font-family: "Arial Black"; line-height: 40px; }
+.navBar .logo > a > .rs{color: rgb(232,103,107); margin-right: 5px; }
+.navBar .logo > a > .card{color: rgb(154,157,162); }
+.navBar nav{float: right; line-height: 40px; } 
+.navBar nav > ul > li{float: left; list-style:none; margin: 0 17px; }
+.navBar nav > ul > li > a{display: block; font-size: 14px; font-weight: bold; transition: border-bottom 0.3s; }
+.navBar nav > ul > li > a:hover{border-bottom: 5px solid rgb(232,103,107); }
 /*顶部背景图*/
-.wall{
-	height: 515px;
-	background: url(../img/wall.jpg) center;
-	background-size: cover;
-
-}
-.mask{
-	background: rgba(0,0,0,0.6);
-	width: 100%;
-	height: 515px;
-}
-
+.wall{height: 515px; background: url(../img/wall.jpg) center; background-size: cover; }
+.mask{background: rgba(0,0,0,0.6); width: 100%; height: 515px; }
 /*主体部分*/
-main > .card{
-	margin: 0 auto;
-	max-width: 940px;
-	background: #fff;
-	margin-top: -340px;
-	box-shadow: 0px 2px 27px 1px rgba(0,0,0,0.19);
-}
-main > .card > .cardTop{
-	padding: 52px;
-}
-main > .card > .cardTop > .avatar{
-	float: left;
-	margin-right: 66px;
-}
-main > .card > .cardTop > .avatar > img{
-	height: 347px;
-	width: 299px
-}
-main > .card > .cardTop > .info{
-	float: left;
-	width: 470px;
-}
-main > .card > .cardTop > .info > .welcome{
-	background: rgb(232,103,107);
-	color: #fff;
-	padding: 9px 18px;
-	display: inline-block;
-	margin-bottom: 40px;
-	position: relative;
-}
-main > .card > .cardTop > .info > .welcome > .triangle{
-	position: absolute;
-	top: 100%;
-	left: 5px;
-	display: block;
-	width: 0;
-	border: 10px solid transparent;
-	border-left-color: rgb(232,103,107);
-	border-top-width: 0;  
-}
-main > .card > .cardTop > .info h1{
-	font-weight: normal;
-	color:#3d4451;
-}
-main > .card > .cardTop > .info p{
-	font-size: 18px;
-}
-main > .card > .cardTop > .info hr{
-	height: 0;
-	border: none;
-	border-top: 1px solid rgb(222,222,222);
-	margin: 20px 0;
-}
+main > .card{margin: 0 auto; max-width: 940px; background: #fff; margin-top: -340px; box-shadow: 0px 2px 27px 1px rgba(0,0,0,0.19); }
+main > .card > .cardTop{padding: 52px; } 
+main > .card > .cardTop > .avatar{float: left; margin-right: 66px; }
+main > .card > .cardTop > .avatar > img{height: 347px; width: 299px }
+main > .card > .cardTop > .info{float: left; width: 470px; }
+main > .card > .cardTop > .info > .welcome{background: rgb(232,103,107); color: #fff; padding: 9px 18px; display: inline-block; margin-bottom: 40px; position: relative; }
+main > .card > .cardTop > .info > .welcome > .triangle{position: absolute; top: 100%; left: 5px; display: block; width: 0; border: 10px solid transparent; border-left-color: rgb(232,103,107); border-top-width: 0; }
+main > .card > .cardTop > .info h1{font-weight: normal; color:#3d4451; }
+main > .card > .cardTop > .info p{font-size: 18px; }
+main > .card > .cardTop > .info hr{height: 0; border: none; border-top: 1px solid rgb(222,222,222); margin: 20px 0; }
 main > .card > .cardTop > .info dl dt,
-main > .card > .cardTop > .info dl dd{
-	float: left;
-	width: 30%;
-	line-height: 40px;
-}
-main > .card > .cardTop > .info dl dt{
-	font-weight: bold;
-}
-main > .card > .cardTop > .info dl dd{
-	width: 70%;
-	color: #9da0a7; 
-}
-
+main > .card > .cardTop > .info dl dd{float: left; width: 30%; line-height: 40px; }
+main > .card > .cardTop > .info dl dt{font-weight: bold; color: #333; }
+main > .card > .cardTop > .info dl dd{width: 70%; color: #9da0a7; }
 /*卡片页脚区*/
-main > .card > footer{
-	background: rgb(232,103,107);
-	text-align: center;
-
-}
-main > .card > footer a{
-	display: inline-block;
-	margin: 20px 14px;
-	width: 40px;
-	line-height: 20px;
-	padding:10px 0;
-	border-radius: 50%;
-}
-main > .card > footer a:hover{
-	background: rgb(207,93,95);
-}
-main > .card > footer svg{
-	height: 20px;
-	width: 20px;
-	fill: #fff;
-	vertical-align: top;
-}
+main > .card > footer{background: rgb(232,103,107); text-align: center; }
+main > .card > footer a{display: inline-block; margin: 20px 14px; width: 40px; line-height: 20px; padding:10px 0; border-radius: 50%; }
+main > .card > footer a:hover{background: rgb(207,93,95); }
+main > .card > footer svg{height: 20px; width: 20px; fill: #fff; vertical-align: top; }
 /*下载按钮*/
-main > .resumeDownload{
-	text-align: center;
-}
-main > .resumeDownload > .btn{
-	margin: 32px auto;
-	text-align: center;
-	display: inline-block;
-	padding: 0 57px; 
-	line-height: 60px;
-	border:1px solid rgb(205,207,209);
-	border-radius: 2px;
-	transition: box-shadow 0.2s;
-}
-main > .resumeDownload > .btn:hover{
-	box-shadow: 0px 9px 25px 4px rgba(0,0,0,0.15);
-}
-main > .introduce{
-	margin: 0 auto;
-	max-width: 940px;
-	line-height: 30px;
-	text-align: center;
-	color: #3d4451;
-	font-size: 19px;
-}
+main > .resumeDownload{text-align: center; }
+main > .resumeDownload > .btn{margin: 32px auto; text-align: center; display: inline-block; padding: 0 57px; line-height: 60px; border:1px solid rgb(205,207,209); border-radius: 2px; transition: box-shadow 0.2s; }
+main > .resumeDownload > .btn:hover{box-shadow: 0px 9px 25px 4px rgba(0,0,0,0.15); }
+main > .introduce{margin: 0 auto; max-width: 940px; line-height: 30px; text-align: center; color: #3d4451; font-size: 19px; }
 /*技能区*/
-section.skills{
-	margin: 60px auto 80px;
-	max-width: 940px;	
-}
-section.skills > h2{
-	text-align: center;
-	margin-bottom: 40px;
-	font-size: 35px;
-	color: #3d4451;
-}
-section.skills > ol{
-	background: #fff;
-	border-radius: 3px;
-	box-shadow: 0px 2px 27px 1px rgba(0,0,0,0.19);
-	padding: 25px 51px;
-}
-section.skills > ol > li{
-	float: left;
-	width: 49%;
-	box-sizing: border-box;
-	margin: 18px 0;
-}
-section.skills > ol > li:nth-child(even){
-	float: right;
-}
-section.skills > ol > li > h3{
-	font-weight: normal;
-	font-size: 14px;
-	margin-bottom: 5px;
-}
-section.skills > ol > li > .progressBar{
-	height: 5px;
-	border-radius: 2px;
-	background: rgb(250,225,225);
-}
-section.skills > ol > li > .progressBar > .progressBar-inner{
-	height: 100%;
-	border-radius: 2px;
-	background: rgb(232,103,107);
-}
+section.skills{margin: 60px auto 80px; max-width: 940px; }
+section.skills > h2{text-align: center; margin-bottom: 40px; font-size: 35px; color: #3d4451; }
+section.skills > ol{background: #fff; border-radius: 3px; box-shadow: 0px 2px 27px 1px rgba(0,0,0,0.19); padding: 25px 51px; }
+section.skills > ol > li{float: left; width: 49%; box-sizing: border-box; margin: 18px 0; }
+section.skills > ol > li:nth-child(even){float: right; }
+section.skills > ol > li > h3{font-weight: normal; font-size: 14px; margin-bottom: 5px; }
+section.skills > ol > li > .progressBar{height: 5px; border-radius: 2px; background: rgb(250,225,225); }
+section.skills > ol > li > .progressBar > .progressBar-inner{height: 100%; border-radius: 2px; background: rgb(232,103,107); }
 /*作品区*/
-section.portfolio{
-	margin: 0 auto 100px;
-	height: 702px;
-	max-width: 940px;
-	text-align: center;
-}
-section.portfolio > h2{
-	margin-bottom: 15px;
-	font-size: 35px;
-	color: #3d4451;
-}
-section.portfolio > nav{
-	display: inline-block;
-	margin: 15px 0;
-}
-section.portfolio > nav > a{
-	display: inline-block;
-	vertical-align: top;
-	margin:0 0 8px 30px;
-}
-section.portfolio > nav > a:first-child{
-	margin-left: 0;
-}
-section.portfolio > nav > .bottomBar{
-	height: 5px;
-	border-radius: 3px;
-	background: #fff;
-	position: relative;
-}
-section.portfolio > nav > .bottomBar > .bottomBar-inner{
-	height: 5px;
-	border-radius: 3px;
-	background: rgb(232,103,107);
-	position: absolute;
-	transition: all 0.3s;
-}
-section.portfolio > nav > .bottomBar > .bottomBar-inner.status-1{
-	width: 17%;
-	top: 0;
-	left: 0;
-}
-section.portfolio > nav > .bottomBar > .bottomBar-inner.status-2{
-	width: 33%;
-	top: 0;
-	left: 50px;
-}
-section.portfolio > nav > .bottomBar > .bottomBar-inner.status-3{
-	width: 50%;
-	top: 0;
-	left: 140px;
-}
-section.portfolio > .works{
-	position: relative;
-
-}
-section.portfolio > .works > .works-big{
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-section.portfolio > .works > .works-small{
-	position: absolute;
-}
+section.portfolio{margin: 0 auto 100px; height: 702px; max-width: 940px; text-align: center; }
+section.portfolio > h2{margin-bottom: 15px; font-size: 35px; color: #3d4451; }
+section.portfolio > nav{display: inline-block; margin: 15px 0; }
+section.portfolio > nav > a{display: inline-block; vertical-align: top; margin:0 0 8px 30px; }
+section.portfolio > nav > a:first-child{margin-left: 0; }
+section.portfolio > nav > .bottomBar{height: 5px; border-radius: 3px; background: #fff; position: relative; }
+section.portfolio > nav > .bottomBar > .bottomBar-inner{height: 5px; border-radius: 3px; background: rgb(232,103,107); position: absolute; transition: all 0.3s; }
+section.portfolio > nav > .bottomBar > .bottomBar-inner.status-1{width: 17%; top: 0; left: 0; }
+section.portfolio > nav > .bottomBar > .bottomBar-inner.status-2{width: 33%; top: 0; left: 50px; }
+section.portfolio > nav > .bottomBar > .bottomBar-inner.status-3{width: 50%; top: 0; left: 140px; }
+section.portfolio > .works{position: relative; }
+section.portfolio > .works > .works-big{position: absolute; left: 0; top: 0; }
+section.portfolio > .works > .works-small{position: absolute; }
