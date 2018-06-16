@@ -4,11 +4,12 @@ a{text-decoration: none; color: inherit; }
 .clearfix::after{content: ""; display: block; clear: both; }
 body{background: rgb(239,239,239); } 
 /*loading样式*/
-.start{position: fixed; width: 100%; height: 100%; background: #999; z-index: 1; display: none; justify-content: center; align-items: center; }
+.start{position: fixed; width: 100%; height: 100%; background: #999; z-index: 2; display: none; justify-content: center; align-items: center; }
 .start.active{display: flex; }
 /*导航栏样式*/
-.navBar{position: fixed; width: 100%; color: #b7b7b7; }
-.navBar > .navWrap{padding:20px 20px; } 
+.navBar{position: fixed; width: 100%; padding:20px 0; color: #b7b7b7; transition: all 0.3s;}
+.navBar.sticky{background: #fff; color: #333; z-index:1; box-shadow: 0 0 10px rgba(0,0,0,.3); padding: 10px 0; }
+.navBar > .navWrap{ padding: 0 20px; } 
 .navBar .logo{float: left; font-size: 30px; font-family: "Arial Black"; line-height: 40px; }
 .navBar .logo > a > .rs{color: rgb(232,103,107); margin-right: 5px; }
 .navBar .logo > a > .card{color: rgb(154,157,162); }

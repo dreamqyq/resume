@@ -16,13 +16,20 @@
 		setTimeout(function(){
 			start.classList.remove('active');
 		},1500)
+		window.onscroll = function(){
+			if(window.scrollY > 0){
+				navBar.classList.add('sticky');				
+			}else{
+				navBar.classList.remove('sticky');
+			}
+		}
 	</script>
 </head>
 <body>
 	<div class="start active" id="start">
 		<div class="loading"></div>
 	</div>
-	<div class="navBar">
+	<div class="navBar" id="navBar">
 		<div class="navWrap  clearfix">
 			<div class="logo">
 				<a href="#">
