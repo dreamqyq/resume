@@ -12,18 +12,7 @@
 		.loading:after{animation-delay:0.75s; }
 		@keyframes loading{0%{height:0; width:0; opacity:1; } 100%{height:100px; width:100px; opacity:0; } }
 	</style>
-	<script>
-		setTimeout(function(){
-			start.classList.remove('active');
-		},1000)
-		window.onscroll = function(){
-			if(window.scrollY > 0){
-				navBar.classList.add('sticky');				
-			}else{
-				navBar.classList.remove('sticky');
-			}
-		}
-	</script>
+
 </head>
 <body>
 	<div class="start active" id="start">
@@ -41,12 +30,35 @@
 					<li><a href="#">ABOUT</a></li>
 					<li><a href="#">SKILLS</a></li>
 					<li><a href="#">PORTFOLIO</a></li>
-					<li><a href="#">EXPERIENCE</a></li>
+					<li>
+						<a href="#">EXPERIENCE</a>
+						<ul class="submenu">
+							<li>Education</li>
+							<li>Clients</li>
+							<li>Reference</li>
+						</ul>
+					</li>
 					<li><a href="#">PRICING</a></li>
-					<li><a href="#">BLOG</a></li>
+					<li>
+						<a href="#">BLOG</a>
+						<ul class="submenu">
+							<li>Blog 1</li>
+							<li>Blog 2</li>
+							<li>Blog 3</li>
+							<li>Blog 4</li>
+							<li>Blog 5</li>
+						</ul>
+					</li>
 					<li><a href="#">CALENDAR</a></li>
 					<li><a href="#">CONTACT</a></li>
-					<li><a href="#">OTHER</a></li>
+					<li>
+						<a href="#">OTHER</a>
+						<ul class="submenu">
+							<li>Demo</li>
+							<li>Typography Page</li>
+							<li>404 Page</li>
+						</ul>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -201,5 +213,29 @@
 		</div>
 	</section>
 	
+	<script>
+		setTimeout(function(){
+			start.classList.remove('active');
+		},1500)
+		window.onscroll = function(){
+			if(window.scrollY > 0){
+				navBar.classList.add('sticky');				
+			}else{
+				navBar.classList.remove('sticky');
+			}
+		}
+
+		let siteMenu = document.querySelectorAll('.navBar nav > ul > li');
+		for(let i = 0; i < siteMenu.length;  i++){
+			siteMenu[i].onmouseenter = function(ele){
+				ele.currentTarget.classList.add('active');
+			}
+			siteMenu[i].onmouseleave = function(ele){
+				ele.currentTarget.classList.remove('active');				
+			}
+		}
+
+	</script>
+
 </body>
 </html>
