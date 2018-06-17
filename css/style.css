@@ -4,7 +4,7 @@ a{text-decoration: none; color: inherit; }
 .clearfix::after{content: ""; display: block; clear: both; }
 body{background: rgb(239,239,239); } 
 /*loading样式*/
-.start{position: fixed; width: 100%; height: 100%; background: #999; z-index: 2; display: none; justify-content: center; align-items: center; }
+.start{position: fixed; width: 100%; height: 100%; background: #fff; z-index: 2; display: none; justify-content: center; align-items: center; }
 .start.active{display: flex; }
 /*导航栏样式*/
 .navBar{position: fixed; width: 100%; padding:20px 0; color: #b7b7b7; transition: all 0.3s;}
@@ -15,8 +15,10 @@ body{background: rgb(239,239,239); }
 .navBar .logo > a > .card{color: rgb(154,157,162); }
 .navBar nav{float: right; line-height: 40px; } 
 .navBar nav > ul > li{float: left; list-style:none; margin: 0 17px; }
-.navBar nav > ul > li > a{display: block; font-size: 14px; font-weight: bold; transition: border-bottom 0.3s; }
-.navBar nav > ul > li > a:hover{border-bottom: 5px solid rgb(232,103,107); }
+.navBar nav > ul > li > a{display: block; font-size: 14px; font-weight: bold; position: relative;}
+.navBar nav > ul > li > a:hover::after{content:''; display: block; position: absolute; top:100%; left: 0; height: 3px; width: 100%; border-radius: 3px; background: rgb(232,103,107); animation:menuSlider .3s; }
+@keyframes menuSlider{0%{width: 0; } 100%{width: 100% } }
+
 /*顶部背景图*/
 .wall{height: 515px; background: url(../img/wall.jpg) center; background-size: cover; }
 .mask{background: rgba(0,0,0,0.6); width: 100%; height: 515px; }
