@@ -27,9 +27,9 @@
 			</div>
 			<nav>
 				<ul class="clearfix">
-					<li><a href="#">ABOUT</a></li>
-					<li><a href="#">SKILLS</a></li>
-					<li><a href="#">PORTFOLIO</a></li>
+					<li><a href="#siteAbout">ABOUT</a></li>
+					<li><a href="#siteSkills">SKILLS</a></li>
+					<li><a href="#sitePortfolio">PORTFOLIO</a></li>
 					<li>
 						<a href="#">EXPERIENCE</a>
 						<ul class="submenu">
@@ -70,7 +70,7 @@
 	<!-- 主体部分 -->
 	<main>
 		<!-- 名片 -->
-		<div class="card">
+		<div class="card" id="siteAbout">
 			<div class="cardTop clearfix">
 				<div class="avatar">
 					<img src="./img/avatar.jpg" alt="头像">
@@ -134,7 +134,7 @@
 			Hello! I’m Enoch Qin , a College student. I am currently studying the Digital Media Technology in the college of computer and information,the China Three Gorges University. Career Objective: Frontend.
 		</div>
 	</main>
-	<section class="skills">
+	<section class="skills" id="siteSkills">
 		<h2>Professional Skills</h2>
 		<ol class="clearfix">
 			<li>
@@ -175,7 +175,7 @@
 			</li>
 		</ol>
 	</section>
-	<section class="portfolio">
+	<section class="portfolio" id="sitePortfolio">
 		<h2>Portfolio</h2>
 		<nav>
 			<a href="javascript:;" id="works1">ALL</a>
@@ -232,6 +232,17 @@
 			}
 			siteMenu[i].onmouseleave = function(ele){
 				ele.currentTarget.classList.remove('active');				
+			}
+		}
+
+		let aTags = document.querySelectorAll('.navBar nav > ul > li > a')
+		for(let i = 0 ; i < aTags.length ; i++){
+			aTags[i].onclick = function(ele){
+				ele.preventDefault();
+				let href = ele.target.getAttribute('href');
+				let targetArea = document.querySelector(href);
+				let targetY =  targetArea.offsetTop;
+				window.scrollTo(0,targetY-80);
 			}
 		}
 
