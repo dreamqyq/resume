@@ -21,7 +21,9 @@ body{background: rgb(239,239,239); }
 .navBar nav > ul > li > .submenu > li{padding: 0 15px; color: #333; }
 .navBar nav > ul > li > a{display: block; font-size: 14px; font-weight: bold; position: relative;}
 .navBar nav > ul > li.active > a::after{content:''; display: block; position: absolute; top:100%; left: 0; height: 4px; width: 100%; border-radius: 4px; background: rgb(232,103,107); animation:menuSlider .3s; }
+.navBar nav > ul > li.highlight > a::after{content:''; display: block; position: absolute; top:100%; left: 0; height: 4px; width: 100%; border-radius: 4px; background: rgb(232,103,107); animation:menuSlider .3s; }
 @keyframes menuSlider{0%{width: 0; } 100%{width: 100% } }
+
 
 /*顶部背景图*/
 .wall{height: 515px; background: url(../img/wall.jpg) center; background-size: cover; }
