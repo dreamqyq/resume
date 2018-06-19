@@ -228,6 +228,7 @@
 		setTimeout(function(){
 			start.classList.remove('active');
 		},1500)
+		findMinDistance();
 		window.onscroll = function(){
 			if(window.scrollY > 0){
 				navBar.classList.add('sticky');				
@@ -236,6 +237,7 @@
 			}
 			findMinDistance();
 		}
+
 
 
 		let siteMenu = document.querySelectorAll('.navBar nav > ul > li');
@@ -292,6 +294,12 @@
 					minIndex = i;
 				}
 			}
+			let navA = document.querySelector('a[href="#'+ targetArea[minIndex].id +'"]');
+			let navLi = navA.parentNode.parentNode.children;
+			for(let i = 0; i < navLi.length; i++){
+				navLi[i].classList.remove('highlight')
+			}
+			navA.parentNode.classList.add('highlight')
 		}
 
 		
