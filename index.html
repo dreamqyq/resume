@@ -237,8 +237,6 @@
 				console.log(targetArea[i])
 		}	
 
-		// findMinDistance();
-
 		window.onscroll = function(){
 			if(window.scrollY > 0){
 				navBar.classList.add('sticky');				
@@ -271,9 +269,7 @@
 				let distance = currentY - targetY;
 				let time = Math.abs((distance/100) * 300);
 				if(time > 500){ time = 500 ;}
-
-
-			
+		
 				// Setup the animation loop.
 				function animate(time) {
 				    requestAnimationFrame(animate);
@@ -296,7 +292,7 @@
 
 		
 		function findMinDistance(){
-			let currentY = window.scrollY;
+			let currentY = window.scrollY + 80;
 			let targetArea = document.querySelectorAll('[data-x]');
 
 			let minIndex = 0;
@@ -316,11 +312,6 @@
 			currentArea.classList.remove('offset');
 			
 		}
-
-
-
-
-
 
 	</script>
 
