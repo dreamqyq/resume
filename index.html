@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Resume</title>
-	<link rel="stylesheet" href="css/style.css">
 	<script src="//at.alicdn.com/t/font_673488_er16whxqj3ba9k9.js"></script>
 	<style type="text/css">
     	.icon {width: 1em; height: 1em; vertical-align: -0.15em; fill: currentColor; overflow: hidden; }
@@ -12,7 +11,8 @@
 		.loading:after{animation-delay:0.75s; }
 		@keyframes loading{0%{height:0; width:0; opacity:1; } 100%{height:100px; width:100px; opacity:0; } }
 	</style>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="start active" id="start">
@@ -22,7 +22,7 @@
 		<div class="navWrap  clearfix">
 			<div class="logo">
 				<a href="#">
-					<span class="rs">RS</span><span class="card">card</span>				
+          <span class="rs">RS</span><span class="card">card</span>	
 				</a>
 			</div>
 			<nav>
@@ -186,42 +186,33 @@
 	</section>
 	<section class="portfolio" id="sitePortfolio" data-x>
 		<h2>Portfolio</h2>
-		<nav>
-			<a href="javascript:;" id="works1">ALL</a>
-			<a href="javascript:;" id="works2">FRAME</a>
-			<a href="javascript:;" id="works3">native JavaScript</a>
-			<div class="bottomBar">
-				<div class="bottomBar-inner status-1" id="bottomBarInner"></div>
-			</div>
-		</nav>
-		<script>
-			var btn1 = document.getElementById('works1'),
-				btn2 = document.getElementById('works2'),
-				btn3 = document.getElementById('works3'),
-				bottomBarInner = document.getElementById('bottomBarInner');
-			btn1.onclick=function(){
-				bottomBarInner.className = "bottomBar-inner status-1";
-			}
-			btn2.onclick=function(){
-				bottomBarInner.className = "bottomBar-inner status-2";
-			}
-			btn3.onclick=function(){
-				bottomBarInner.className = "bottomBar-inner status-3";
-			}
-		</script>
-		<div class="works">
-			<div class="works-big">
-				<img src="./img/1.jpg" alt="first-works">
-			</div>
-			<div class="works-small" style="top: 0;left: 647px">
-				<img src="./img/2.jpg" alt="second-works">
-			</div>
-			<div class="works-small" style="top: 312px;left: 647px">
-				<img src="./img/3.jpg" alt="third-works">
-			</div>
-		</div>
+    <div class="slide-wrapper">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <img class="swiper-slide" src="./img/works/canvasboard.jpg" width="668"  alt="">
+            <img class="swiper-slide" src="./img/works/navpage.jpg" width="668" alt="">
+            <img class="swiper-slide" src="./img/works/appleslide.jpg" width="668" alt="">
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
 	</section>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+  <script>
+  var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
+  </script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
 	<script>

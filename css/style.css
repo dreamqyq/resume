@@ -69,14 +69,28 @@ section.skills.offset > ol > li > .progressBar > .progressBar-inner{transform: t
 /*作品区*/
 section.portfolio{margin: 0 auto 100px; height: 702px; max-width: 940px; text-align: center; }
 section.portfolio > h2{margin-bottom: 15px; font-size: 35px; color: #3d4451; }
-section.portfolio > nav{display: inline-block; margin: 15px 0; }
-section.portfolio > nav > a{display: inline-block; vertical-align: top; margin:0 0 8px 30px; }
-section.portfolio > nav > a:first-child{margin-left: 0; }
-section.portfolio > nav > .bottomBar{height: 5px; border-radius: 3px; background: #fff; position: relative; }
-section.portfolio > nav > .bottomBar > .bottomBar-inner{height: 5px; border-radius: 3px; background: rgb(232,103,107); position: absolute; transition: all 0.3s; }
-section.portfolio > nav > .bottomBar > .bottomBar-inner.status-1{width: 17%; top: 0; left: 0; }
-section.portfolio > nav > .bottomBar > .bottomBar-inner.status-2{width: 33%; top: 0; left: 50px; }
-section.portfolio > nav > .bottomBar > .bottomBar-inner.status-3{width: 50%; top: 0; left: 140px; }
-section.portfolio > .works{position: relative; }
-section.portfolio > .works > .works-big{position: absolute; left: 0; top: 0; }
-section.portfolio > .works > .works-small{position: absolute; }
+section.portfolio > .slide-wrapper > .swiper-container{
+  width: 668px;
+  height:501px;
+  box-shadow:0px 2px 27px 1px rgba(0,0,0,0.19);
+}
+section.portfolio > .slide-wrapper{
+  width:800px;
+  margin:0 auto;
+  position:relative;
+}
+section.portfolio > .slide-wrapper > .swiper-button-prev,
+section.portfolio > .slide-wrapper > .swiper-button-next{
+  background-color:#fff;
+  height:70px;
+  width:70px;
+  border-radius:50%;
+  margin-top:-35px;
+  left:-30px;
+  right:auto;
+  outline:none;
+}
+section.portfolio > .slide-wrapper > .swiper-button-next{
+  left:auto;
+  right:-30px;
+}
