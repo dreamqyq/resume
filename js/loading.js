@@ -11,6 +11,7 @@
       setTimeout(function() {
         start.classList.remove('active')
         window.scroll(0,window.scrollY+1)
+        window.scroll(0,window.scrollY-1)
       }, 1500)
     }
   }

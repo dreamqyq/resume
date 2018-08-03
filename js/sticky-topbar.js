@@ -11,7 +11,7 @@
     },
     bindEvents : function(){
       window.addEventListener('scroll', function(){
-        if(window.scrollY > 1){
+        if(window.scrollY > 0){
           this.active(this.view,'sticky')
         }else{
           this.deactive(this.view,'sticky')

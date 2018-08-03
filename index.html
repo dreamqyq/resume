@@ -193,13 +193,27 @@
       <div class="swiper-button-next"></div>
     </div>
 	</section>
-
+  <section class="message">
+    <h2>Message</h2>
+    <ol id="messagesList"></ol>
+    <form action="" id="messageForm">
+      <label for="">name：</label>
+      <input type="text" name="name">
+      <label for="">content：</label>
+      <input type="text" name="content">
+      <input type="submit" value="submit">
+    </form>
+  </section>
+  <!-- 依赖的库 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
-  <script src="js/init-swiper.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.9.0/dist/av-min.js"></script>
+  <!-- 模块化 -->
+  <script src="js/init-swiper.js"></script>
   <script src="js/loading.js"></script>
   <script src="js/sticky-topbar.js"></script>
   <script src="js/auto-slide-up.js"></script>
   <script src="js/smoothly-navigation.js"></script>
+  <script src="js/message.js"></script>
 </body>
 </html>

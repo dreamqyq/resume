@@ -66,30 +66,27 @@ section.skills > ol > li > .progressBar{height: 5px; border-radius: 2px; backgro
 section.skills > ol > li > .progressBar > .progressBar-inner{height: 100%; border-radius: 2px; background: rgb(232,103,107); transition: all 1s; transform: translateX(0); }
 section.skills.offset > ol > li > .progressBar > .progressBar-inner{transform: translateX(-100%); }
 /*作品区*/
-section.portfolio{margin: 0 auto 100px; height: 702px; max-width: 940px; text-align: center; }
+section.portfolio{margin: 0 auto; height: 620px; max-width: 940px; text-align: center; }
+section.message > h2,
 section.portfolio > h2{margin-bottom: 15px; font-size: 35px; color: #3d4451; }
-section.portfolio > .slide-wrapper > .swiper-container{
-  width: 668px;
-  height:501px;
-  box-shadow:0px 2px 27px 1px rgba(0,0,0,0.19);
-}
-section.portfolio > .slide-wrapper{
-  width:800px;
-  margin:0 auto;
-  position:relative;
-}
+section.portfolio > .slide-wrapper > .swiper-container{ width: 668px; height:501px; box-shadow:0px 2px 27px 1px rgba(0,0,0,0.19); }
+section.portfolio > .slide-wrapper{ width:800px; margin:0 auto; position:relative; }
 section.portfolio > .slide-wrapper > .swiper-button-prev,
-section.portfolio > .slide-wrapper > .swiper-button-next{
-  background-color:#fff;
-  height:70px;
-  width:70px;
-  border-radius:50%;
-  margin-top:-35px;
-  left:-30px;
-  right:auto;
-  outline:none;
+section.portfolio > .slide-wrapper > .swiper-button-next{ background-color:#fff; height:70px; width:70px; border-radius:50%; margin-top:-35px; left:-30px; right:auto; outline:none; }
+section.portfolio > .slide-wrapper > .swiper-button-next{ left:auto; right:-30px; }
+/* 留言区 */
+section.message{
+  text-align:center;
+  width:640px;
+  margin:50px auto;
 }
-section.portfolio > .slide-wrapper > .swiper-button-next{
-  left:auto;
-  right:-30px;
+section.message > ol{
+  width:640px;
+  text-align:left;
+  margin:0 auto 40px;
+  border-top:1px solid #ddd;
+}
+section.message > ol > li{
+  padding:10px;
+  border-bottom:1px solid #ddd;
 }
