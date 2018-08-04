@@ -1,26 +1,11 @@
 !function(){
-  let view = document.querySelector('section.message')
+  let view = View('section.message')
 
-  let model = {
-    init : function(){
-      var APP_ID = 'mhV5mbomQXQnB50TUsfuGmCB-gzGzoHsz'
-      var APP_KEY = 'w4usAIsSAERkgINFpAfrtEN2'
-      AV.init({ appId: APP_ID, appKey: APP_KEY })
-    },
-    fetch : function(){
-      var query = new AV.Query('Message')
-      return query.find()
-    },
-    save : function(name,content){
-      var Message = AV.Object.extend('Message');
-      var message = new Message();
-      return message.save({
-          name : name,
-          content : content 
-      })
-    }
-  }
+  let model = Model({tableName:'Message'})
 
+  // let controller = Controller({
+  //
+  // })
   let controller = {
     view : null,
     model : null,
@@ -56,7 +41,7 @@
       let messageForm = this.form
       let name = messageForm.querySelector('input[name=name]').value
       let content = messageForm.querySelector('input[name=content]').value
-      this.model.save(name,content)
+      this.model.save({name:name,content:content})
         .then(function(object) {
           let li = document.createElement('li')
           li.textContent = `${object.attributes.name} : ${object.attributes.content}`
