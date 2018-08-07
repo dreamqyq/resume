@@ -1,24 +1,17 @@
 !function(){
+  // View() Model() Controller() 方法源代码见/base文件夹
+  
   let view = View('section.message')
 
   let model = Model({tableName:'Message'})
 
-  // let controller = Controller({
-  //
-  // })
-  let controller = {
-    view : null,
-    model : null,
+  let controller = Controller({
     form : null,
     messageList : null,
     init : function(view,model){
-      this.view = view 
-      this.model = model
       this.form = this.view.querySelector('#messageForm')
       this.messageList = this.view.querySelector('#messageList')
-      this.model.init()
       this.loadMessage()
-      this.bindEvents()
     },
     bindEvents : function(){
       this.form.addEventListener('submit',function(e){
@@ -49,6 +42,6 @@
           messageForm.querySelector('input[name=content]').value = ''
       })
     }
-  }
+  })
   controller.init(view,model)
 }.call()
